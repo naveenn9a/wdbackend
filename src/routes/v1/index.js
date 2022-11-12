@@ -3,6 +3,7 @@ const authRoute = require('./auth.route');
 const userRoute = require('./user.route');
 const productRoute = require('./product.route');
 const categoryRoute = require('./category.route');
+const statusRoute = require('./status.route');
 const postRoute = require('./post.route');
 const tagRoute = require('./tag.route');
 const docsRoute = require('./docs.route');
@@ -26,6 +27,10 @@ const defaultRoutes = [
   {
     path: '/category',
     route: categoryRoute
+  },
+  {
+    path: '/status',
+    route: statusRoute
   },
   {
     path: '/tag',
