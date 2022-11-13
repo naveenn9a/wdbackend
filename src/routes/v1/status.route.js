@@ -15,7 +15,7 @@ router
 router
   .route('/:statusId')
   .get(auth('getStatus'), StatusController.getStatus)
-  .patch(auth('manageStatus'), StatusController.updateStatus)
+  .patch(StatusController.updateStatus)
   .delete(auth('manageStatus'), StatusController.deleteStatus);
 
 module.exports = router;

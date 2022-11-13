@@ -18,6 +18,10 @@ const statusSchema = mongoose.Schema(
       type: Number,
       default: 0
     },
+    copy: {
+      type: Number,
+      default: 0
+    }
   },
   {
     timestamps: true,

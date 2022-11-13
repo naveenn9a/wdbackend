@@ -10,7 +10,7 @@ const createStatus = catchAsync(async (req, res) => {
 });
 
 const getStatuses = catchAsync(async (req, res) => {
-  const filter = pickRegex(req.query, ['language']);
+  const filter = pickRegex(req.query, ['text', 'language']);
   const options = pick(req.query, ['sortBy', 'limit', 'page']);
   const result = await statusService.queryStatuses(filter, options);
   res.send(result);
